@@ -7,6 +7,8 @@
 // @include      http*://steamcommunity.com/*
 // @include      http*://store.steampowered.com/*
 // @grant        none
+//downloadURL	 https://github.com/AchooLuv/Back-To-The-Top/blob/master/backToTheTop.user.js
+//updateURL	     https://github.com/AchooLuv/Back-To-The-Top/blob/master/backToTheTop.user.js
 // ==/UserScript==
 
 (function _bTT() {
