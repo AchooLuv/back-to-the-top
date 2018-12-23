@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Steam好友动态回到顶部(原生JavaScript)!
 // @author       AchooLuv
-// @match        https://steamcommunity.com/id/
+// @match        https://steamcommunity.com/id/*/home/
 // @grant        none
 // ==/UserScript==
 
@@ -40,11 +40,11 @@
             var timer = null,
                 isTop = true,
                 clientHeight = document.documentElement.clientHeight || document.clientHeight,
-                targetTag = document.getElementById('ModalContentContainer'),
+                targetTag = document.getElementById('global_header'),
                 _i = document.createElement('i'),
                 _top = document.createElement('a');
         _top.setAttribute('href', 'javascript:;');
-        _top.style.cssText = 'position:fixed;bottom:8%;right:22.5%;display:none;width:40px;height:40px;background:#1f6083;border-radius:50%;overflow:hidden'; //响应改用百分比
+        _top.style.cssText = 'position:fixed;bottom:8%;right:20%;display:none;width:40px;height:40px;background:#1f6083;border-radius:50%;overflow:hidden;z-index:5'; //响应改用百分比
         targetTag.appendChild(_top);
         eventObject.addHander(window, 'scroll', function () {
             var _aTop = document.documentElement.scrollTop || document.body.scrollTop;
