@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         BackToTheTop
-// @namespace    https://github.com/AchooLuv
+// @namespace    https://github.com/AchooLuv/Back-To-The-Top
 // @version      0.1
-// @description  Steam好友动态回到顶部(原生JavaScript)!
+// @description  Steam全站回到顶部脚本(原生JavaScript)!
 // @author       AchooLuv
 // @include      http*://steamcommunity.com/*
 // @include      http*://store.steampowered.com/*
@@ -12,20 +12,6 @@
 (function _bTT() {
     'use strict';
     var eventObject = {
-        addOnload: function (fn) {
-            if (fn == null) {
-                fn = document;
-            }
-            var oldOnload = window.onload;
-            if (window.onload != 'function') {
-                window.onload = fn;
-            } else {
-                window.onload = function () {
-                    oldOnload();
-                    fn();
-                }
-            }
-        },
         addHander: function (ele, type, hander) {
             if (ele.addEventListerner) {
                 ele.addEventListerner(type, hander, false);
