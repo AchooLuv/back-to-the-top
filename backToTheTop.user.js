@@ -1,7 +1,8 @@
 // ==UserScript==
 // @name         BackToTheTop
 // @namespace    https://github.com/AchooLuv/Back-To-The-Top
-// @version      0.1
+// @icon         http://store.steampowered.com/favicon.ico
+// @version      1.0
 // @description  Steam全站回到顶部脚本(原生JavaScript)!
 // @author       AchooLuv
 // @include      http*://steamcommunity.com/*
