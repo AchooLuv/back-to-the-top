@@ -54,7 +54,6 @@
         _i.style.cssText = 'display:block;width:100%;height:100%;color:white;';
         _i.innerHTML = '&#xe6a8;';
         _top.appendChild(_i);
-
         _top.setAttribute('href', 'javascript:;');
         _top.style.cssText = 'position:fixed;bottom:8%;right:20%;display:none;width:40px;height:40px;border-radius:50%;overflow:hidden;z-index:9999;'; //响应改用百分比
         targetTag.appendChild(_top);
